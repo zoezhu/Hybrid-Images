@@ -7,3 +7,7 @@ In this code, for example, I use two pictures of myself to combine. An important
 * <b>Key Method</b>: Impliment the first picture with laplacian pyramid, while the second one with Gaussian pyramid
 
 * <b>Principle</b>: The difference between <b>laplacian pyramid</b> and <b>Gaussian pyramid</b> is that, the first one is calculated based on the seconde one, when we shrink a picture by half, the picture losses half of its information, we continue to shirnk it, we get a pyramid of pictures with less information, that is Gaussian pyramid. (Then we amplify the pictures to original size, the total imformation is the same as the small one. So the picture stays at low frequency which is blur.) Based on Gaussian pyramid, if we use original picture substracts the later one which contains less information we will get lossed information and that will be the lines of the picture which is high frequency, and that groups of substractions constitude laplacian pyramid.
+
+
+
+The whole idea comes from the paper: Oliva, A., Torralba, A., & Schyns, P. G. (2006, July). Hybrid images. In ACM Transactions on Graphics (TOG) (Vol. 25, No. 3, pp. 527-532). ACM.
